@@ -83,7 +83,50 @@ header {
   padding: 20px;
   border-radius: 5px;
 }
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.grid-3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-4 {
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: 1fr 1fr;
+}
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "item-1 item-1 item-1"
+  "item-2 item-3 item-3"
+  "item-4 item-5 item-6"
+  ;
+}
 
+.item-1 {
+  grid-area: item-1;
+}
+
+.item-2 {
+  grid-area: item-2;
+}
+.item-3 {
+  grid-area: item-3;
+}
+.item-4 {
+  grid-area: item-4;
+}
+.item-5 {
+  grid-area: item-5;
+}
+.item-6 {
+  grid-area: item-6;
+}
 /* FOOTER */
 footer {
   display: flex;
